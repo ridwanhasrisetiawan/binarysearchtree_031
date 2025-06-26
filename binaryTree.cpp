@@ -1,16 +1,14 @@
 
 
-
 #include <iostream>
 using namespace std;
 
 class Node
 {
-    public:
+public:
     int info;
     Node *leftchild;
     Node *rightchild;
-
 
     Node()
     {
@@ -21,7 +19,7 @@ class Node
 
 class BinaryTree
 {
-    public:
+public:
     Node *ROOT;
 
     BinaryTree()
@@ -29,10 +27,14 @@ class BinaryTree
         ROOT = nullptr;
     }
 
-void insert()
-{
-    int x;
-    cout << "Masukan nilai";
-    cin >> x;
-}
+    void insert()
+    {
+        int x;
+        cout << "Masukan nilai";
+        cin >> x;
+
+        Node *newNode = new Node();
+
+        newNode->info = x;
+    }
 };
