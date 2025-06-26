@@ -18,3 +18,21 @@ class Node
         rightchild = nullptr;
     }
 };
+
+class BinaryTree
+{
+    public:
+    Node *ROOT;
+
+    BinaryTree()
+    {
+        ROOT = nullptr;
+    }
+
+void insert()
+{
+    int x;
+    cout << "Masukan nilai";
+    cin >> x;
+}
+};
