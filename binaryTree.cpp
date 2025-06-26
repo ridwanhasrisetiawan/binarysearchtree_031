@@ -47,6 +47,8 @@ public:
         if (parent == nullptr)
         {
             ROOT = newNode;
+
+            return;
         }
     }
 };
