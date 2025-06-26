@@ -60,5 +60,30 @@ public:
 
             return;
         }
+
+
+        else if (x > parent->info)
+        {
+
+            parent->rightchild = newNode;
+
+            return;
+        }
     }
+
+    void search(int element, Node *&parent, Node *&currentNode)
+     {
+        // this function the searches the current node of the specified node as
+        currentNode = ROOT;
+        parent = nullptr;
+        while((currentNode != nullptr) && (currentNode->info != element))
+        {
+            parent = currentNode;
+            if(element < currentNode->info)
+                currentNode = currentNode->leftchild;
+            else
+                currentNode = currentNode->rightchild;
+        }
+    }
+
 };
