@@ -45,5 +45,8 @@ public:
         search(x, parent, currentNode);
 
         if (parent == nullptr)
+        {
+            ROOT = newNode;
+        }
     }
 };
